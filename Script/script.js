@@ -1,6 +1,6 @@
 $(function () {
     // Fetch the JSON data asynchronously
-    $.getJSON("../data/games.json", function (games) {
+    $.getJSON("../../data/games.json", function (games) {
         console.log("JSON Data:", games) // Check if JSON data is loaded correctly
 
         // Iterate over the JSON array
