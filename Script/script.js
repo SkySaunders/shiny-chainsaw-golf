@@ -1,6 +1,17 @@
+/**
+ * Fetches JSON data from a remote URL and generates HTML elements based on the data.
+ */
 $(() => {
+    /**
+     * Makes an AJAX request to retrieve JSON data.
+     * @param {string} url - The URL of the JSON data.
+     * @param {string} type - The type of the AJAX request.
+     * @param {string} dataType - The expected data type of the response.
+     * @param {function} success - The callback function to handle the successful response.
+     * @param {function} error - The callback function to handle errors.
+     */
     $.ajax({
-        url: "https://raw.githubusercontent.com/hrantgartley/376-labs/main/golf/data/games.json",
+        url: "https://raw.githubusercontent.com/hrantgartley/upgraded-octo-waffle-test/main/data/games.json",
         type: "GET",
         dataType: "json",
         success: function (games) {
