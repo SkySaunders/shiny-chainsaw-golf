@@ -38,8 +38,8 @@ $(() => {
                 });
             });
         },
-        fail: () => {
-            console.log("An error occurred");
+        error: (xhr, status, error) => {
+            console.log("An error occurred:", status, error);
         },
     });
 });
